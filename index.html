@@ -81,7 +81,7 @@
         </div>
         <div class="col-md-6 text-center order-1 order-md-2">
           <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 blurb">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
               <h2>SUGAR LAND MUSEUM</h2>
               <img
                 src="imgs/lolli_icon.png"
@@ -104,11 +104,38 @@
       </div>
       <div class="row align-items-center content">
         <div class="col-md-6 order-1 order-md-2">
-          <img class="img-fluid" src="imgs/milk.png" alt="" />
+          <img class="img-fluid" src="imgs/sprinkles.png" alt="" />
         </div>
-        <div class="col-md-6 text-center order-2 order-md-1">
+        <div class="col-md-6 text-center ">
           <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 blurb">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0 order-1 order-md-2">
+              <h2>SUGAR LAND MUSEUM</h2>
+              <img
+                src="imgs/lolli_icon.png"
+                alt=""
+                class="d-none d-lg-inline"
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+                voluptatibus nulla, delectus earum numquam esse ducimus
+                consequuntur totam! Quasi fugit in consequatur? Unde quisquam,
+                dicta illum dolorum tenetur voluptatum culpa? Lorem ipsum dolor
+                sit amet, consectetur adipisicing elit. Temporibus iure eaque
+                quidem est, dicta corporis ullam, atque sapiente officia
+                possimus tempora. Recusandae aspernatur assumenda officia
+                explicabo quia et, dolorum nobis?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img class="img-fluid" src="imgs/gumball.png" alt="" />
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
               <h2>SUGAR LAND MUSEUM</h2>
               <img
                 src="imgs/lolli_icon.png"
@@ -148,5 +175,15 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(function () {
+          $(document).scroll(function () {
+              var $nav = $("#mainNavbar");
+              $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+          });
+      });
+  </script>
+
   </body>
 </html>
